@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Uttkarsh Mandaknale</title>
+        <link rel="shortcut icon" type="image/x-icon" href="./logo/logo.png"/>
+        <link rel="stylesheet" href="./css/ux.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" />
+    </head>
+    <body>
+
+    <div class="container2"> 
+        <div class="logo"><a href="./index.html"><img height="80px" width="80px" src="./logo/logo.svg"></a></div> 
+
+        
+       <!-- nav  -->
+            <nav class="menu">
+                <div class="menu-right menu-item">
+                        <span class="menu-link active"><a href="./ux.html" >UX.</a></span>
+                        <span class="menu-link"><a href="./about.html" >About.</a></span>
+                        <span class="menu-link"><a href="./Uttkarsh U M - UX Designer - Resume.pdf" target="_blank">Resume.</a></span>
+                        <span class="menu-link"><a href="./contact.html" >Contact.</a></span>
+                </div>
+            </nav>
+    </div>
+    <div class="header">
+        <h1 class="header-1"> Projects.</h1>
+        </div>
+        <div class="content">
+            <div class="grid">
+                <div class="box">
+                <a class="grid__item" href="./Designs.html">
+                    <img class="box__img" src="./projects/ux-thumbnail-3.jpg" >
+                </a></div>
+                <div class="box">
+                <a class="grid__item" href="./Tag My Bag.html">
+                    <img class="box__img" src="./projects/ux-thumbnail-2.jpg" >
+                </a></div>
+                <div class="box">
+                <a class="grid__item" href="./AM Beats.html">
+                    <img class="box__img" src="./projects/ux-thumbnail-1.jpg" >
+                </a></div>
+            </div>
+        </div>
+
+        <div class="content1">
+            <div class="grid1">
+                <div class="box1">
+                <a class="grid__item1" href="./Designs.html">
+                    <img class="box__img1" src="./projects/ux-thumbnail-3.jpg" >
+                </a></div>
+                <div class="box1">
+                <a class="grid__item1" href="./pdfs/TAG MY BAG.pdf" target="_blank">
+                    <img class="box__img1" src="./projects/ux-thumbnail-2.jpg" >
+                </a></div>
+                <div class="box1">
+                <a class="grid__item1" href="./pdfs/AM BEATS.pdf" target="_blank">
+                    <img class="box__img1" src="./projects/ux-thumbnail-1.jpg" >
+                </a></div>
+            </div>
+        </div>
+
+    <div class="footer">
+        <h1 class="footer1">Get in touch.</h1>
+        <h1 class="footer2">Feel free to reach out for collaborations or just a friendly hello.</br> <span class="mail"><a href="mailto:uttkarsh2108@gmail.com">uttkarsh2108@gmail.com</a></span></h1>
+        <nav class="socials">
+            <ul>
+                    <li><a href="https://www.linkedin.com/in/uttk/" target="_blank"><img width="31px" src="./logo/linkedin.svg"></a></li>
+                    <li><a href="https://dribbble.com/strange_rock" target="_blank"><img width="31px" src="./logo/dribbble.svg"></a></li>
+                    <li><a href="https://www.behance.net/uttkarsmandakn" target="_blank"><img width="31px" src="./logo/behance.svg"></a></li>
+                    <li><a href="https://www.instagram.com/strange_rock" target="_blank"><img width="31px" src="./logo/instagram.svg"></a></li>
+                    <li><a href="https://twitter.com/Uttkarsh2108" target="_blank"><img width="31px" src="./logo/twitter.svg"></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <a href="#" class="to-top">
+        <i class="material-icons">arrow_upward</i>
+    </a>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js" integrity="sha512-6gudNVbNM/cVsLUMOb8g2b/RBqtQJ3aDfRFgU+5paeaCTtbYY/Dg00MzZq7r6RvJGI2KKtPBhjkHGTL/iOe21A==" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    <script>
+       var textWrapper = document.querySelector('.header-1');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+    anime.timeline()
+    .add({
+        targets: '.header-1 .letter',
+        translateY: [200,0],
+        translateZ: 0,
+        opacity: [0,1],
+        easing: "easeOutExpo",
+        duration: 2000,
+        delay: (el, i) => 500 + 100 * i
+    });
+
+    var tl = new TweenMax.staggerFrom(".content", 2, {
+        opacity: 0,     
+        y: 200,
+        ease: Expo.easeInOut,
+        delay: 6,
+    }, 0.1);
+
+    var tl = new TweenMax.staggerFrom(".content1", 2, {
+        opacity: 0,     
+        y: 200,
+        ease: Expo.easeInOut,
+        delay: 6,
+    }, 0.1);
+
+    </script>
+    </body>
+    </html>
