@@ -129,6 +129,11 @@
         ease: Expo.easeInOut,
         delay: 0.3,
     }, 0.1);
+       
+       var loader = document.getElementById("loading");
+    window.addEventListener("load", function(){
+        loader.style.display= "none";
+    })
     // var textWrapper = document.querySelector('.content-1');
     // textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
     // anime.timeline()
