@@ -181,7 +181,7 @@ nav {
 }
 
 .grid__item {
-	transform: translate(60%,60%);
+	transform: translate(0%,60%);
 	display: flex;
 	justify-content: center;
 	margin: 0 0 10rem 0;
